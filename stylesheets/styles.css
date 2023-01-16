@@ -12555,17 +12555,21 @@ header .navbar-nav-mobile .accordion-collapse ul li a {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 992px) {
+  header .navbar-nav-mobile .accordion-collapse ul li a {
+    text-transform: uppercase;
+  }
 }
 header .navbar-nav-mobile__footer {
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: 80px;
   margin-bottom: 30px;
-  -ms-flex-pack: center;
+  -ms-flex-pack: left;
 }
 @media only screen and (min-width: 992px) {
   header .navbar-nav-mobile__footer {
@@ -14134,7 +14138,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 22px 24px;
+  padding: 22px 27px 22px 24px;
 }
 @media only screen and (min-width: 576px) {
   .section--missions .swiper-slide-content {
@@ -14180,9 +14184,15 @@ body {
 }
 .section--missions .slide-subtitle {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0.01em;
+}
+@media only screen and (min-width: 992px) {
+  .section--missions .slide-subtitle {
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 .section--missions .slide-link {
   position: relative;
@@ -14384,7 +14394,7 @@ body {
   width: 32px;
   height: 32px;
   font-size: 0;
-  background: url("../images/swiper-button.svg") no-repeat;
+  background: url("../images/swiper-button-white.svg") no-repeat;
   background-size: contain;
 }
 @media only screen and (min-width: 992px) {
@@ -15653,6 +15663,9 @@ body {
     font-size: 24px;
     line-height: 26px;
   }
+}
+.section--faq .accordion-body a {
+  display: inline-block;
 }
 .section--contact {
   margin-top: 64px;
