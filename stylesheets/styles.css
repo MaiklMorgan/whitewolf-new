@@ -12676,12 +12676,14 @@ header .nav-link:focus {
     transition-duration: 0.32s;
   }
 }
-header .nav-link:hover:before,
-header .nav-link:active:before,
-header .nav-link:focus:before {
-  left: 0;
-  width: 100%;
-  background: #e53631;
+@media only screen and (min-width: 992px) {
+  header .nav-link:hover:before,
+  header .nav-link:active:before,
+  header .nav-link:focus:before {
+    left: 0;
+    width: 100%;
+    background: #e53631;
+  }
 }
 header .dropdown:hover .dropdown-menu,
 header .dropdown[aria-expanded="true"] .dropdown-menu {
@@ -13130,6 +13132,14 @@ header .dropdown-lang .dropdown-item:hover {
 body {
   overflow-x: hidden;
 }
+.section {
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .section {
+    overflow: inherit;
+  }
+}
 .section--intro {
   padding-top: 87px;
   padding-bottom: 64px;
@@ -13288,11 +13298,11 @@ body {
   }
 }
 .section--intro.animated {
-  background-size: 248%;
+  background-size: 256%;
 }
 @media only screen and (min-width: 375px) {
   .section--intro.animated {
-    background-size: 198%;
+    background-size: 202%;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -15693,6 +15703,7 @@ body {
   margin-top: 48px;
   padding: 50px 0 50px 0;
   background: #000704;
+  visibility: visible;
 }
 @media only screen and (min-width: 576px) {
   .section--contact .form-wrapper {
@@ -15731,72 +15742,72 @@ body {
     content: none;
   }
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-one {
+.section--contact .form-wrapper .contact-accent.animated .accent-one {
   position: absolute;
   top: -83px;
   right: -2px;
 }
 @media only screen and (min-width: 576px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-one {
+  .section--contact .form-wrapper .contact-accent.animated .accent-one {
     top: -25px;
     right: -51px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-one {
+  .section--contact .form-wrapper .contact-accent.animated .accent-one {
     top: -17px;
     right: 166px;
   }
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-one svg {
+.section--contact .form-wrapper .contact-accent.animated .accent-one svg {
   width: 76px;
 }
 @media only screen and (min-width: 576px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-one svg {
+  .section--contact .form-wrapper .contact-accent.animated .accent-one svg {
     width: 120px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-one svg {
+  .section--contact .form-wrapper .contact-accent.animated .accent-one svg {
     width: 169px;
   }
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-one svg path {
+.section--contact .form-wrapper .contact-accent.animated .accent-one svg path {
   animation: dash 2s linear reverse forwards;
   stroke-dasharray: 700;
   stroke-dashoffset: 0;
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-two {
+.section--contact .form-wrapper .contact-accent.animated .accent-two {
   position: absolute;
   top: 6px;
   right: 49px;
 }
 @media only screen and (min-width: 576px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-two {
+  .section--contact .form-wrapper .contact-accent.animated .accent-two {
     top: 81px;
     right: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-two {
+  .section--contact .form-wrapper .contact-accent.animated .accent-two {
     top: 109px;
     right: 282px;
   }
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-two svg {
+.section--contact .form-wrapper .contact-accent.animated .accent-two svg {
   width: 28px;
 }
 @media only screen and (min-width: 576px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-two svg {
+  .section--contact .form-wrapper .contact-accent.animated .accent-two svg {
     width: 42px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section--contact .form-wrapper.animated .contact-accent .accent-two svg {
+  .section--contact .form-wrapper .contact-accent.animated .accent-two svg {
     width: 59px;
   }
 }
-.section--contact .form-wrapper.animated .contact-accent .accent-two svg path {
+.section--contact .form-wrapper .contact-accent.animated .accent-two svg path {
   animation: dash1 1s linear reverse forwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
